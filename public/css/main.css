@@ -1,0 +1,162 @@
+body,
+html {
+    height: 100%; /* تأكد من أن الصفحة تأخذ ارتفاع كامل الشاشة */
+    margin: 0; /* إزالة المسافات الافتراضية */
+    padding: 0; /* إزالة الحشوة الافتراضية */
+    display: flex; /* استخدام Flexbox لتوزيع المحتوى */
+    flex-direction: column; /* ترتيب المحتوى عموديًا */
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1abc9c; /* Green hover effect */
+    transition: color 0.3s ease;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #2c3e50; /* Dark blue-gray */
+    display: flex; /* Horizontal layout */
+    justify-content: space-around; /* Space out the nav items */
+    align-items: center; /* Center the items vertically */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+nav a {
+    margin: 0 15px; /* Spacing between links */
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase; /* Capitalize links */
+}
+
+nav a:hover {
+    color: #1abc9c; /* Hover effect on links */
+}
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #2c3e50;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e6f7ff;
+}
+
+.edit-quote {
+    padding: 10px;
+    border: 2px solid #2c3e50;
+    font-size: 16px;
+    border-radius: 5px;
+    resize: none;
+    background-color: #fcfcfc;
+    color: #2c3e50;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.edit-quote:hover {
+    background-color: #e6f7ff;
+    border-color: #1abc9c;
+}
+
+/* Button Styles */
+button {
+    background-color: #2980b9;
+    color: white;
+    border: none; 
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1abc9c;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #16a085;
+    transform: translateY(0);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: auto; /* اجعل الفوتر دائمًا في الأسفل */
+    width: 100%; /* اجعل الفوتر يمتد بعرض الشاشة */
+}
+
+footer a {
+    color: #1abc9c;
+}
+
+footer a:hover {
+    color: #2980b9;
+}
+.button-link {
+    display: inline-block; /* لجعل العنصر يبدو كزر */
+    background-color: #2c3e50; /* لون الخلفية (أحمر) */
+    color: white; /* لون النص */
+    text-decoration: none; /* إزالة الخط السفلي */
+    font-size: 16px; /* حجم الخط */
+    font-weight: bold; /* سمك النص */
+    padding: 10px 20px; /* مسافة داخلية للزر */
+    border-radius: 8px; /* زوايا دائرية */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف لإبراز الزر */
+    transition: all 0.3s ease; /* تأثير الانتقال للتغيرات */
+}
+
+.button-link:hover {
+    background-color: #2c3e50; /* لون أغمق عند التمرير */
+    transform: translateY(-3px); /* رفع بسيط عند التمرير */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* تكبير الظل */
+}
+
+.button-link:active {
+    background-color: #a93226; /* لون مختلف عند الضغط */
+    transform: translateY(0); /* عودة الزر لوضعه الطبيعي */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* تقليل الظل */
+}
+
+/* توسيط الرابط بعد الجدول */
+.button-container {
+    display: flex;
+    justify-content: center; /* التوسيط أفقيًا */
+    margin-top: 20px; /* مسافة بين الجدول والرابط */
+}
